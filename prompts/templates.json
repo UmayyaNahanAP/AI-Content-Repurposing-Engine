@@ -1,0 +1,6 @@
+{
+  "linkedin": "Rewrite the following content into a LinkedIn post with professional tone. {content}",
+  "twitter": "Rewrite the following into a numbered Twitter thread. {content}",
+  "youtube": "Write this into a YouTube script. {content}",
+  "newsletter": "Write this into a newsletter summary. {content}"
+}
