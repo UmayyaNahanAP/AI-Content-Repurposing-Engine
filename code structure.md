@@ -1,18 +1,28 @@
 AI-Content-Repurposing-Engine/
 │
-├─ app.py                 # Streamlit main app
-├─ requirements.txt       # All dependencies
-├─ .env                   # Store GROQ_API_KEY
-├─ README.md              # Project overview + architecture diagram
-├─ prompts/
-│   └─ templates.json     # Platform-specific prompt templates
-├─ outputs/
-│   └─ (generated content saved here)
-├─ examples/
-│   └─ sample_blog.txt    # Sample blog text for testing
-└─ modules/
-    ├─ parser.py          # Blog parsing (URL/text)
-    ├─ semantic.py        # Semantic analysis & embeddings
-    ├─ planner.py         # Content planning agent
-    ├─ generators.py      # Platform-specific content generation using Groq
-    └─ reviewer.py        # Quality review agent
+├── app.py                     # Streamlit main application
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation with architecture
+├── .env                       # API keys (not uploaded to GitHub)
+│
+├── modules/                   # Core system modules
+│   ├── parser.py              # Extract and clean blog content
+│   ├── semantic.py            # Embedding + key sentence extraction
+│   ├── planner.py             # Content generation planning
+│   ├── generators.py          # LLM generation using Groq
+│   └── reviewer.py            # Quality review and cleanup
+│
+├── prompts/
+│   └── templates.json         # Platform-specific prompt templates
+│
+├── outputs/                   # Generated platform outputs
+│   ├── linkedin.txt
+│   ├── twitter.txt
+│   ├── youtube.txt
+│   └── newsletter.txt
+│
+├── examples/
+│   └── sample_blog.txt        # Example input blog for testing
+│
+└── docs/
+    └── Prompt_Design_Documentation.docx
